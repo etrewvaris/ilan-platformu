@@ -1,7 +1,7 @@
 // lib/api.js
 // Backend API'sine yapılan tüm istekleri tek noktadan yöneten yardımcı katman.
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000') + '/api';
 
 /**
  * İlanları filtre parametrelerine göre getirir.
