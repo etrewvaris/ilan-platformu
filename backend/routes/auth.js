@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 const crypto = require('crypto');
 
 // PostgreSQL havuz bağlantın (Proendeki db bağlantı dosyanı buraya uyarlayabilirsin)
-const pool = require('../db'); // veya veritabanı bağlantı dosyanın yolu neyse
+const pool = require('../config/db'); // veya veritabanı bağlantı dosyanın yolu neyse
 
 // Nodemailer Transporter Ayarı (Gmail veya SMTP bilgileri .env'den çekilir)
 const transporter = nodemailer.createTransport({
