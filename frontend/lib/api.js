@@ -1,8 +1,7 @@
 // lib/api.js
 // Backend API'sine yapılan tüm istekleri tek noktadan yöneten yardımcı katman.
 
-const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000') + '/api';
-
+const API_BASE_URL = 'https://ilan-platformu-production.up.railway.app/api';
 /**
  * İlanları filtre parametrelerine göre getirir.
  * @param {Object} filters - { category_id, city, min_price, max_price, q, attributes, sort, page, limit }
