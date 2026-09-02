@@ -9,7 +9,7 @@ const rateLimit = require('express-rate-limit');
 const listingsRouter = require('./routes/listings');
 const categoriesRouter = require('./routes/categories');
 const app = express();
-
+app.set('trust proxy', 1);
 app.use(helmet());
 app.use(compression());
 app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
