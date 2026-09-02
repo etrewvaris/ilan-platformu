@@ -5,9 +5,9 @@
 import { useState, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import FilterPanel from '../../components/FilterPanel';
-import ListingCard from '../../components/ListingCard';
-import { fetchListings, fetchCategories, API_BASE_URL } from '../../lib/api';
+import FilterPanel from '../components/FilterPanel';
+import ListingCard from '../components/ListingCard';
+import { fetchListings, fetchCategories, API_BASE_URL } from '../lib/api';
 
 export async function getServerSideProps({ query }) {
   const filters = {
