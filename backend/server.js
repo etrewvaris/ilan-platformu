@@ -8,7 +8,6 @@ const rateLimit = require('express-rate-limit');
 
 const listingsRouter = require('./routes/listings');
 const categoriesRouter = require('./routes/categories');
-const authRouter = require('./routes/auth');
 const app = express();
 
 app.use(helmet());
