@@ -8,7 +8,7 @@ const rateLimit = require('express-rate-limit');
 
 const listingsRouter = require('./routes/listings');
 const categoriesRouter = require('./routes/categories');
-
+const authRouter = require('./routes/auth');
 const app = express();
 
 app.use(helmet());
@@ -30,7 +30,7 @@ app.get('/health', (req, res) => res.json({ status: 'ok', timestamp: new Date().
 
 app.use('/api/listings', listingsRouter);
 app.use('/api/categories', categoriesRouter);
-
+const authRouter = require('./routes/auth');
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({ success: false, message: 'Uç nokta bulunamadı' });
